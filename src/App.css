@@ -44,9 +44,6 @@ body{
   color: var(--clr-main);
 }
 
-.ant-btn-primary{
-  background-color: var(--clr-main) !important;
-}
 .ant-input-outlined:focus-within{
   box-shadow: 0 0 0 2px #bc8f5b37;
 }
@@ -55,4 +52,41 @@ body{
 }
 .ant-input-affix-wrapper-focused{
   border-color: var(--clr-main) !important;
+}
+
+
+/* ACTIVE STYLE */
+.active{
+  background-color: var(--clr-main);
+  border-radius: 10px;
+}
+/* ACTIVE STYLE */
+
+
+/* BUTTON STYLE */
+.ant-btn:hover{
+  color: var(--clr-main) !important;
+  border-color: var(--clr-main) !important;
+}
+.ant-btn-primary{
+  background-color: var(--clr-main) !important;
+}
+.ant-btn-primary:hover{
+  color: white !important;
+  opacity: 80% !important;
+}
+
+/* HOME PAGE STYLE */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;  /* Optional background color */
+  overflow: hidden;
+}
+
+img {
+  width: 150px;  /* Adjust size of the image */
+  transition: transform 0.1s ease-out;  /* Smooth transition for movement */
 }

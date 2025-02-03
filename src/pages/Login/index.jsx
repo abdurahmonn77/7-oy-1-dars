@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import { LogoIcon } from '../../assets/icons'
 import { Button, Form, Input } from 'antd'
 import { LockOutlined, UserOutlined } from '@ant-design/icons'
-import getUsers from '../../service/getUsers'
 import getToken from '../../hooks/getToken'
 import toast, { Toaster } from 'react-hot-toast'
+import getRequest from '../../service/getRequest'
 
 const Login = () => {
     const { setToken } = getToken()
     const [isLoading, setIsLoading] = useState(false)
-    const allUsers = getUsers()
+    const allUsers = getRequest("/users")
 
     function handleSubmitLogin(data) {
         setIsLoading(true)

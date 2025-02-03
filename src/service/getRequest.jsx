@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { instance } from '../hooks/instance'
 
-const getUsers = () => {
+const getRequest = (api) => {
     const [data, setData] = useState([]) 
 
     useEffect(() => {
-        instance().get("/users").then(res => setData(res.data))
+        instance().get(api).then(res => setData(res.data))
     },[])
   return data
 }
 
-export default getUsers
+export default getRequest
