@@ -4,6 +4,7 @@ export const PATH = {
     students:"/students",
     market:"/market",
     groups:"/groups",
+    teachersAdd:"/teachers/add"
 }
 
 export default PATH

@@ -1,7 +1,7 @@
 import React from 'react'
 import {LogoIcon} from '../assets/icons'
 import { NavLink, useNavigate } from 'react-router-dom'
-import {DashboardRouteList} from '../hooks/routes'
+import { DashboardNavList } from '../hooks/routes'
 
 const Navbar = () => {
     const navigate = useNavigate()
@@ -16,8 +16,8 @@ const Navbar = () => {
                 <span className='text-[25px] font-medium text-white'>Teacher</span>
             </div>
         </div>
-            <div className='flex flex-col gap-3 pl-4 mt-[50px]'>
-                {DashboardRouteList.map(item => <NavLink key={item.id}  to={item.path} className={"text-white py-3 flex items-center gap-3 p-2"}>
+            <div className='flex flex-col pl-4 mt-[50px]'>
+                {DashboardNavList.map(item => <NavLink key={item.id}  to={item.path} className={"text-white py-3 flex items-center gap-3 p-2 duration-300 hover:bg-[#bc8f5b9c] first:hover:rounded-tl-[10px] first:hover:rounded-tr-[10px] last:hover:rounded-bl-[10px] last:hover:rounded-br-[10px]"}>
                     {item.icon}
                    <span className='text-[18px] font-medium'>{item.title}</span>
                 </NavLink>)}

@@ -18,8 +18,10 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home">
-      <img className='HomeImg' src="src/assets/images/ERP.svg" alt="ERP logo" />
+    <div className="flex items-start justify-center relative">
+      <h1 className='text-[70px] font-extrabold text-slate-400'>C<span className='span-text'>O</span>MI<span className='span-second'>N</span>G S<span className='span-text'>OO</span><span className='span-second'>N</span>...</h1>
+      <img className='HomeImg absolute top-[150px]' src="src/assets/images/ERP.svg" alt="ERP logo" />
+      <strong className='absolute top-[600px]'>Not coming soon tbh*</strong>
     </div>
   );
 };
